@@ -103,7 +103,6 @@ public class NetUtil {
             httpURLConnection.connect();
             // 6. POST请求体设置
             if (method) {
-                /* 4. 处理输入输出 */
                 // 写入参数到请求中
                 StringBuffer params = new StringBuffer();
                 Map<String, Object> hashMap = request.getHashMap();
@@ -131,7 +130,7 @@ public class NetUtil {
         } catch (IOException e) {
             callBack.onFailed(e);
         }finally {
-            // 5. 断开连接
+            // 断开连接
             if (null != httpURLConnection){
                 try {
                     httpURLConnection.disconnect();
