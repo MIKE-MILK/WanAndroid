@@ -1,4 +1,4 @@
-package com.mredrock.gankio.uitls.httphelper;
+package network.httphelper;
 
 import java.util.Map;
 
